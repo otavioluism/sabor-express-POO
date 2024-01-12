@@ -1,3 +1,4 @@
+from modelos.cardapio.sobremesa import Sobremesa
 from modelos.restaurante import Restaurante
 from modelos.cardapio.bebida import Bebida
 from modelos.cardapio.prato import Prato
@@ -8,12 +9,14 @@ restaurante_praca = Restaurante('praça', 'Gourmet')
 # restaurante_praca.receber_avaliacao('Emy', 2)
 bebida = Bebida('Suco de Melancia', 5.75, 'Grande')
 prato = Prato('Pao de Forma', 2.75, 'O melhor pão de minas')
+sobremesa = Sobremesa('Petigateau', 20.00, 'Sorvete', 'Médio')
 
 
 def main():
     # Restaurante.listar_restaurantes()
     restaurante_praca.adicionar_item_no_cardapio(prato)
     restaurante_praca.adicionar_item_no_cardapio(bebida)
+    restaurante_praca.adicionar_item_no_cardapio(sobremesa)
     bebida.aplicar_desconto()
     prato.aplicar_desconto()
     restaurante_praca.exibir_cardapio

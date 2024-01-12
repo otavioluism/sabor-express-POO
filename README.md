@@ -8,7 +8,7 @@ python3 -m venv ./venv
 source nome_do_ambiente/bin/activate
 
 ### Ativar o ambiente virtual (Windows)
-.\nome_do_ambiente\Scripts\activate
+.\nome_do_ambiente\Scripts\activate.bat
 
 ### Desativar o ambiente virtual
 deactivate
